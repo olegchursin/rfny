@@ -1,0 +1,112 @@
+html, body {
+  font-family: Roboto, Arial, san-serif;
+}
+
+/**************************
+*****      Links      *****
+**************************/
+
+a {
+
+}
+
+a:hover {
+
+}
+
+a:visited {
+
+}
+
+a:active {
+
+}
+
+/**************************
+*****     Buttons     *****
+**************************/
+
+.btn {
+  color: blue;
+}
+
+.btn-register {
+  color: red;
+}
+
+
+/***********************************
+*****     Generic Elements     *****
+***********************************/
+
+.quote-text {
+
+}
+
+.quote-section {
+
+}
+
+.learn-more {
+
+}
+
+.img-overlay-title {
+
+}
+
+.speaker-card {
+
+}
+
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+
+
+/*************************
+*****     Footer     *****
+*************************/
+
+.footer {
+  
+}
+
+.footer-copyright {
+
+}
+
+.footer-social-icons {
+
+}
+
+.footer-dev-link {
+
+}
+
+
+/*********************************************
+*****     Homepage-specific elements     *****
+*********************************************/
+
+#home-merquee {
+
+}
+
+#home-register-section {
+
+}
+
+#home-program-section {
+
+}
+
+#home-topics {
+
+}
+
+.home-topic-icon {
+
+}
