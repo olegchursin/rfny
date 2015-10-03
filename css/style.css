@@ -1,17 +1,85 @@
-html, body {
-  font-family: Roboto, Arial, san-serif;
+*, html, body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
+
+/*******************************
+*****      Typography      *****
+*******************************/
+
+p {
+  line-height: 1.4em;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2.25em;
+  padding-top: 10;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 5px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin: 5px;
+  font-weight: 500;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+.slab {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.white-text {
+  color: white;
+}
+
+.green-text {
+  color: #cdfd70;
+  margin-top: 0;
+}
+
+.weight-300 { font-weight: 300; }
+.weight-400 { font-weight: 400; }
+.weight-500 { font-weight: 500; }
+.weight-600 { font-weight: 600; }
+.weight-700 { font-weight: 700; }
+
+.icon-text {
+  font-size: .75em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 
 /**************************
 *****      Links      *****
 **************************/
 
 a {
-
+  text-decoration: none;
 }
 
 a:hover {
-
+  text-decoration: none;
 }
 
 a:visited {
@@ -22,16 +90,125 @@ a:active {
 
 }
 
+.white-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
 /**************************
 *****     Buttons     *****
 **************************/
 
 .btn {
-  color: blue;
+    display: inline-block;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: ubuntu,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 2px;
+    padding: 9px 75px 9px 75px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: black;
+    border-color: black;
 }
 
 .btn-register {
-  color: red;
+    background-color: #F44336;
+    border-color: #F44336;
+}
+
+.btn-register:hover {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+}
+
+
+/******************************
+*****     Positioning     *****
+******************************/
+
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  clear: both;
+  margin-bottom: 2%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 2%;
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.col-1  { width: 6.5%;  }
+.col-2  { width: 15%;   }
+.col-3  { width: 23.5%; }
+.col-4  { width: 32%;   }
+.col-5  { width: 40.5%; }
+.col-6  { width: 49%;   }
+.col-7  { width: 57.5%; }
+.col-8  { width: 66%;   }
+.col-9  { width: 74.5%; }
+.col-10 { width: 83%;   }
+.col-11 { width: 91.5%; }
+.col-12 { width: 100%;  }
+
+
+/************************
+*****     Media     *****
+************************/
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.img-responsive {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/**********************
+*****     Nav     *****
+**********************/
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 
@@ -40,50 +217,84 @@ a:active {
 ***********************************/
 
 .quote-text {
-
+  color: white;
+  font-size: 2em;
 }
 
 .quote-section {
-
+  background: url(../img/rfny-homepage-quote-2880.jpg);
+  padding: 40px;
+  text-align: center;
+  margin: 10, 0;
 }
 
 .learn-more {
-
+  color: #F44336;
+  display: block;
 }
 
-.img-overlay-title {
+.img-overlay-text {
 
 }
 
 .speaker-card {
-
+  display: block;
 }
-
-* {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-}
-
 
 
 /*************************
 *****     Footer     *****
 *************************/
 
-.footer {
-  
-}
-
-.footer-copyright {
-
+footer {
+  background-color: #222222;
 }
 
 .footer-social-icons {
-
+  text-align: center;
+  padding: 30px 0 40px;
 }
 
-.footer-dev-link {
+.footer-social-icons a {
+  color: #666666;
+}
 
+.footer-social-icons a:hover {
+  color: white;
+}
+
+.footer-copyright {
+  color: #666666;
+  float: left;
+  padding: 20px 20px;
+}
+
+.footer-copyright a {
+  color: #666666;
+  font-weight: 500;
+}
+
+.footer-copyright a:hover {
+  color: white;
+}
+
+.footer-dev {
+  color: #666666;
+  float: right;
+  padding: 20px 20px;
+}
+
+.footer-dev a {
+  font-weight: 500;
+}
+
+.footer-dev a:hover {
+  color: white;
+}
+
+.footer-dev a {
+  color: #666666;
+  font-weight: 500;
 }
 
 
@@ -91,16 +302,32 @@ a:active {
 *****     Homepage-specific elements     *****
 *********************************************/
 
-#home-merquee {
+#home-marquee {
+  margin: 0 auto;
 
 }
 
 #home-register-section {
-
+  background: #222222;
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-align: center;
 }
 
 #home-program-section {
+  margin: 0 auto;
+  padding: 10px 50px;
+  text-align: center;
+}
 
+#home-speakers-section {
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+#home-program-icons {
+  padding: 10px;
 }
 
 #home-topics {
@@ -108,5 +335,5 @@ a:active {
 }
 
 .home-topic-icon {
-
+  display: block;
 }
