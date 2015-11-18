@@ -77,7 +77,7 @@
             <span id="message-error" class="error">Can not be left nlank.</span>
             <textarea class="form-element" id="message" type="text" name="message" placeholder="Message"></textarea>
 
-            <input type="text" name="verify" class="verify-box" placeholder="vzerify you're human">
+            <input type="text" name="verify" class="form-element" placeholder="Verify you're human">
             <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
 
             <input class="form-element" type="submit" value="SUBMIT">
