@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <script src="https://raw.github.com/Wilto/iOS-Orientationchange-Fix/master/ios-orientationchange-fix.js"></script>
   <meta name="keywords" content="russia, russian forum, russian business, investing in russia, russian economy, economic forum, business forum, russian and the USA, US-Russia relations, US-Russia cooperation, Russia-US, russia forum new york, discussion, preventing cold war II, partners, international relations">
   <meta name="description" content="This website is an official web resource for the Russia Forum New York - a platform for proactive diplomacy, mutual understanding and respect of each nation’s geopolitical interests, and initiatives to promote political, commercial, scientific, educational, and cultural cooperation.">
   <title>Russia Forum New York</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100|Open+Sans:400,300,600,700&subset=latin,cyrillic|Roboto+Slab:400,300,700&subset=latin,cyrillic|Ubuntu:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Open+Sans:400,300,700,600|Roboto+Slab:400,100,300,700|Ubuntu:400,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
@@ -26,7 +26,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">| Russia Forum New York</a>
+            <a href="index.html" class="navbar-brand">| Russia Forum New York</a>
           </div> <!-- navbar-header -->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -44,9 +44,9 @@
     </nav> <!-- navbar wrapper -->
     
     <!-- Homepage marquee starts. Marquee - background image in BW with text overlay. -->
-    <section id="home-marquee">
-      <img class="img-responsive" src="img/rfny-homepage-marquee.jpg" alt="rfny homepage marquee">
-    <!-- Homepage marquee ends -->
+    <section id="marquee">
+      <img class="img-responsive" src="img/rfny-homepage-marquee-bw.jpg" alt="rfny homepage marquee">
+    </section><!-- Homepage marquee ends -->
 
     <section id="home-register-section"> <!-- Homepage title, subtitle, RFNY description, register button and additional description -->
       <h1 class="white-text slab">Russia Forum New York</h1>
@@ -55,10 +55,10 @@
       The Forum will be of great value to anyone with an interest in the Russian and American economies and these great nations' mutual business interests.</p>
       
       <!-- 'Register Now' btn -->
-      <a class="btn btn-register" href="register.html">Register Now</a>
+      <a class="btn btn-register" href="register.html">Register Now*</a>
       <!-- end 'Register Now' btn -->
 
-      <p class="white-text">Registration for RFNY<strong>2016</strong> has not started yet.</p>
+      <p class="white-text no-registration">*Registration for RFNY<strong>2016</strong> has not started yet.</p>
     </section> <!-- Homepage 'Register Now' section ends -->
     
     <section id="home-program-section"> <!-- RFNY program section starts. Forum title, intro text and topics list (icons with topics names). -->
@@ -67,6 +67,7 @@
         <p>Russia Forum New York will provide industrial and academic leaders an opportunity to share their experiences relating to current issues in international business, finance, regulation, and infrastructure develop a framework to improve interaction between the Russian and U.S. fiscal markets; and discuss issues such as the formation of an international financial center in Moscow, investment opportunities in Russia’s vast, varied geographic regions and economic sectors, as well as innovative projects currently underway or on the drawing board.</p>
         <a class="learn-more" href="program.html">Learn more ></a>
         
+        <h3 class="slab weight-600">Discussion topics include:</h3>
         <div class="wrapper clearfix">
           <section id="home-program-icons">
             <article class="home-topic-icon col-2 first"> <!-- Homepage RFNY topic element. Icon with topic's name. -->
@@ -84,7 +85,7 @@
               <p class="icon-text slab">Economics</p>        
             </article> <!-- Topic element ends -->
             
-            <article class="home-topic-icon col-2"> <!-- Homepage RFNY topic element. Icon with topic's name. -->
+            <article class="home-topic-icon col-2 line-wrap-first"> <!-- Homepage RFNY topic element. Icon with topic's name. -->
               <i class="fa fa-share-alt fa-5x"></i>
               <p class="icon-text slab">Media</p>        
             </article> <!-- Topic element ends -->
@@ -111,29 +112,41 @@
       <p>Make important connections at the Forum and network during daily events. Discuss the latest U.S. - Russia trends with speakers and guests.</p>
       <a class="learn-more" href="speakers.html">Learn more ></a>
     
-      <section id="home-speaker-cards" class="wrapper clearfix">
-        <article class="speaker-card col-3 first"> <!-- Speaker card begins -->
-          <img class="img-responsive" src="img/speaker-img-300.jpg" alt="Name Lastname at RFNY">
-          <h3 class="speaker-name">Sergey Kislyak</h3>
-          <p class="speaker-title"><strong>Ambassador</strong></br>Embassy of Russian Federation to the United States</p>
+      <section id="speaker-cards" class="wrapper clearfix">
+        <article class="card col-3 first"> <!-- Speaker card begins -->
+          <a href="speakers/sergey-kislyak.html"><img class="img-responsive" src="img/speakers-ambassador-kislyak.jpg" alt="Ambassador Sergey Kislyak at RFNY"></a>
+          <div class="speaker-info">
+            <p class="speaker-name"><a href="sergey-kislyak.html">Sergey Kislyak</a></p>
+            <p class="speaker-title">Ambassador</p>
+            <p class="speaker-descr">Embassy of Russian Federation to the United States</p>
+          </div>
         </article> <!-- Speaker card ends -->
 
-        <article class="speaker-card col-3"> <!-- Speaker card begins -->
-          <img class="img-responsive" src="img/speaker-img-300.jpg" alt="Name Lastname at RFNY">
-          <h3 class="speaker-name">Dmitry Akhanov</h3>
-          <p class="speaker-title"><strong>CEO</strong></br>Rusnano</br>USA</p>
+        <article class="card col-3"> <!-- Speaker card begins -->
+          <a href="speakers/dmitry-akhanov.html"><img class="img-responsive" src="img/speakers-dmitry-akhanov.jpg" alt="Dmitry Akhanov at RFNY"></a>
+          <div class="speaker-info">
+            <p class="speaker-name"><a href="speakers/dmitry-akhanov.html">Dmitry Akhanov</a></p>
+            <p class="speaker-title">CEO</p>
+            <p class="speaker-descr">Rusnano </br>USA</p>
+          </div>
         </article> <!-- Speaker card ends -->
 
-        <article class="speaker-card col-3"> <!-- Speaker card begins -->
-          <img class="img-responsive" src="img/speaker-img-300.jpg" alt="Name Lastname at RFNY">
-          <h3 class="speaker-name">Lorraine Hariton</h3>
-          <p class="speaker-title"><strong>Special Representative</strong></br>Economic and Business Affairs</br>U.S. Department of State</p>
+        <article class="card col-3 line-wrap-first"> <!-- Speaker card begins -->
+          <a href="speakers/lorraine-hariton.html"><img class="img-responsive" src="img/speakers-lorraine-hariton.jpg" alt="Lorraine Hariton at RFNY"></a>
+          <div class="speaker-info">
+            <p class="speaker-name"><a href="speakers/lorraine-hariton.html">Lorraine Hariton</a></p>
+            <p class="speaker-title">Special Representative</p>
+            <p class="speaker-descr">Economic and Business Affairs, U.S. Department of State</p>
+          </div>
         </article> <!-- Speaker card ends -->
 
-        <article class="speaker-card col-3"> <!-- Speaker card begins -->
-          <img class="img-responsive" src="img/speaker-img-300.jpg" alt="Name Lastname at RFNY">
-          <h3 class="speaker-name">Charles Bausman</h3>
-          <p class="speaker-title"><strong>Founder and Editor</strong></br>Russia Insider News Site</br><a href="http://russiainsider.com"></a>russiainsider.com</p>
+        <article class="card col-3"> <!-- Speaker card begins -->
+          <a href="speakers/charles-bausman.html"><img class="img-responsive" src="img/speakers-charles-bausman.jpg" alt="Charles Bausman at RFNY"></a>
+          <div class="speaker-info">
+            <p class="speaker-name"><a href="speakers/charles-bausman.html">Charles Bausman</a></p>
+            <p class="speaker-title">Founder and Editor</p>
+            <p class="speaker-descr">Russia Insider News Site</p>
+          </div>
         </article> <!-- Speaker-card ends -->
       </section> <!-- home-speaker-cards ends -->
 
@@ -141,10 +154,9 @@
 
     <footer class="clearfix">
       <article class="footer-social-icons"> <!-- RFNY Social media accounts list. -->
-        <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-        <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-        <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-        <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
+        <a href="https://www.facebook.com/RussiaForumNY"><i class="fa fa-facebook-square fa-3x"></i></a>
+        <a href="https://twitter.com/RussiaForumNY"><i class="fa fa-twitter-square fa-3x"></i></a>
+        <a href="https://www.youtube.com/channel/UCXzhAq7LUl2yai5oXqpE8Wg"><i class="fa fa-youtube-square fa-3x"></i></a>
       </article> <!-- RFNY social media accounts list ends. -->
       
       <article class="footer-copyright">
@@ -152,9 +164,12 @@
       </article>
 
       <article class="footer-dev">
-        <p>Web dev: <a href="http://hinteraction.com">Human interaction</a>.</p>
+        <p>Built by: <a href="http://hinteraction.com">Oleg Chursin</a></p>
       </article>
     </div> <!-- Wrapper ends -->
   </footer>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

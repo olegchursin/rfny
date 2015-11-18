@@ -9,6 +9,7 @@
 *******************************/
 
 p {
+  font-size: 1.15em;
   line-height: 1.4em;
   margin: 10px;
 }
@@ -48,6 +49,12 @@ h6 {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+.years {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 5em;
+  color: #337ab7;
+}
+
 .white-text {
   color: white;
 }
@@ -55,6 +62,14 @@ h6 {
 .green-text {
   color: #cdfd70;
   margin-top: 0;
+}
+
+.no-registration {
+  font-size: .85em;
+}
+
+#sponsors-contact-toggle:hover {
+  cursor: pointer;
 }
 
 .weight-300 { font-weight: 300; }
@@ -80,6 +95,7 @@ a {
 
 a:hover {
   text-decoration: none;
+
 }
 
 a:visited {
@@ -95,6 +111,10 @@ a:active {
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.white-link:hover {
+  color: white;
 }
 
 
@@ -128,6 +148,7 @@ a:active {
 .btn-register:hover {
     background-color: #B71C1C;
     border-color: #B71C1C;
+    color: #fff;
 }
 
 
@@ -196,6 +217,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -231,14 +253,57 @@ img {
 .learn-more {
   color: #F44336;
   display: block;
+  margin-bottom: 20px;
 }
 
-.img-overlay-text {
-
-}
-
-.speaker-card {
+.card {
   display: block;
+}
+
+.speaker-name {
+  color: #333333;
+  font-weight: 600;
+  margin: 5px 0 10px;
+}
+
+.speaker-name a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333333;
+}
+
+.speaker-name a:hover {
+  text-decoration: none;
+  color: #F44336;
+}
+
+.speaker-title {
+  color: #616161;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 5px;
+}
+
+.speaker-descr {
+  color: #333333;
+  font-weight: 300;
+  margin: 0;
+}
+
+.speaker-info {
+  text-align: left;
+}
+
+.fade {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.fade:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 
 
@@ -274,6 +339,10 @@ footer {
   font-weight: 500;
 }
 
+.footer-copyright p {
+  font-size: 1em;
+}
+
 .footer-copyright a:hover {
   color: white;
 }
@@ -283,6 +352,10 @@ footer {
   float: right;
   padding: 20px 20px;
 }
+
+.footer-dev p {
+  font-size: 1em;
+} 
 
 .footer-dev a {
   font-weight: 500;
@@ -299,12 +372,15 @@ footer {
 
 
 /*********************************************
-*****     Homepage-specific elements     *****
+*****              UI elements           *****
 *********************************************/
 
-#home-marquee {
-  margin: 0 auto;
+.whitespace {
+  margin: 50px auto;
+}
 
+#marquee {
+  margin: 40px auto 0;
 }
 
 #home-register-section {
@@ -316,7 +392,7 @@ footer {
 
 #home-program-section {
   margin: 0 auto;
-  padding: 10px 50px;
+  padding: 30px 50px 10px;
   text-align: center;
 }
 
@@ -330,10 +406,87 @@ footer {
   padding: 10px;
 }
 
+#sponsors-icons {
+  padding: 10px;
+}
+
+#internal-page-section {
+  margin: 0 auto;
+  padding: 30px 50px 60px;
+  text-align: center;
+}
+
+.fa-briefcase { color: #eb5354; }
+.fa-bar-chart { color: #fc9c60; }
+.fa-line-chart { color: #abd02b;}
+.fa-share-alt { color: #9477d4;}
+.fa-graduation-cap { color: #325aa7;}
+.fa-university { color: #ebd463;}
+
+
 #home-topics {
 
 }
 
 .home-topic-icon {
   display: block;
+}
+
+
+/*********************************************
+*****             Contact Form           *****
+*********************************************/
+form { 
+  max-width:420px; 
+  margin:20px auto; 
+}
+
+.form-element {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:300;
+  font-size: 18px;
+  border-radius: 2px;
+  line-height: 22px;
+  background-color: transparent;
+  border:1px solid #0277BD;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.form-element:focus { 
+  border:2px solid #01579B; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  background:#0277BD;
+  border-radius:2px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size: 1.15em;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover {
+  background:#01579B; 
+}
+
+#sponsors-contact-form {
+  display: none;
 }
