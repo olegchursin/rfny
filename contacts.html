@@ -60,11 +60,18 @@
       <div class="whitespace"></div>
 
       <h3>Contact us using the form below:</h3>
-        <form>
-            <input class="form-element" type="text" name="name" placeholder="Name">
-            <input class="form-element" type="text" name="email" placeholder="Email">
-            <textarea class="form-element" type="text" name="message" placeholder="Message"></textarea>
+        <form action="#" method="post">
+            <span id="fullname-error" class="error">Must be more than two characters.</span>
+            <input class="form-element" id="fullname" type="text" name="fullname" placeholder="Fullname">
+
+            <span id="email-error" class="error">Must be a valid email.</span>
+            <input class="form-element" id="email" type="text" name="email" placeholder="Email">
+            
+            <span id="message-error" class="error">Can not be left nlank.</span>
+            <textarea class="form-element" id="message" type="text" name="message" placeholder="Message"></textarea>
+
             <input class="form-element" type="submit" value="SUBMIT">
+
         </form>
       
       <p>Follow us on social media for future updates and announcements.</p>
@@ -96,5 +103,6 @@
   </footer>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

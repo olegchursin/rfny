@@ -490,3 +490,16 @@ textarea {
 #sponsors-contact-form {
   display: none;
 }
+
+/*********************************************
+*****           Form Validation          *****
+*********************************************/
+
+input.error, textarea.error {
+  border: 1px solid #eb5354;
+}
+
+span.error {
+  display: none;
+  color: #eb5354;
+}
