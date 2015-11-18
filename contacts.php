@@ -36,7 +36,7 @@
               <li><a href="speakers.html">Speakers</a></li>
               <li><a href="past-forums.html">Past Forums</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="contacts.php">Contacts</a></li>
             </ul>
           </div> <!-- navbar-collapse collapse -->
         </div> <!-- container -->
@@ -60,7 +60,14 @@
       <div class="whitespace"></div>
 
       <h3>Contact us using the form below:</h3>
-        <form action="#" method="post">
+
+        <?php if ($_GET['s'] == 'success') { ?>
+        <p>Thank you. Your message has been sent successfully!</p>
+        <?php } else if ($_GET['s'] == 'error') { ?>
+        <p>Your message was not sent. Make sure you type in the proper verification numbers. <a href="conctacts.php">Cleck here to try again</a>. If issues persist please send email to the site admin (hello@russiaforumny.com).</p>
+        <?php } else { ?>
+
+        <form action="mailer.php" method="post">
             <span id="fullname-error" class="error">Must be more than two characters.</span>
             <input class="form-element" id="fullname" type="text" name="fullname" placeholder="Fullname">
 
@@ -70,8 +77,11 @@
             <span id="message-error" class="error">Can not be left nlank.</span>
             <textarea class="form-element" id="message" type="text" name="message" placeholder="Message"></textarea>
 
-            <input class="form-element" type="submit" value="SUBMIT">
+            <input type="text" name="verify" class="verify-box" placeholder="vzerify you're human">
+            <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
 
+            <input class="form-element" type="submit" value="SUBMIT">
+            <?php } ?>
         </form>
       
       <p>Follow us on social media for future updates and announcements.</p>
