@@ -503,3 +503,27 @@ span.error {
   display: none;
   color: #eb5354;
 }
+
+/*********************************************
+*****           Agenda Table             *****
+*********************************************/
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+td {
+  padding: 10px 20px 10px 0;
+  vertical-align: top;
+}
+
+td span {
+  border-bottom: 3px solid #ef5250;
+  text-transform: uppercase;
+}
+
+#agenda-changes {
+  color: #BDBDBD;
+  font-size: .75em;
+}

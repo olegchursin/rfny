@@ -57,9 +57,7 @@
       <h3>RFNY email:</h3>
        <a class="learn-more" href="mailto:hello@russiaforumny.com">hello@russiaforumn.com</a>
 
-      <div class="whitespace"></div>
-
-      <h3>Contact us using the form below:</h3>
+      <!-- <h3>Contact us using the form below:</h3>
 
         <?php if ($_GET['s'] == 'success') { ?>
         <p>Thank you. Your message has been sent successfully!</p>
@@ -82,7 +80,7 @@
 
             <input class="form-element" type="submit" value="SUBMIT">
             <?php } ?>
-        </form>
+        </form> -->
       
       <p>Follow us on social media for future updates and announcements.</p>
       <p><a href="https://www.facebook.com/RussiaForumNY">Facebook</a> | <a href="https://twitter.com/RussiaForumNY">Twitter</a> | <a href="https://www.youtube.com/channel/UCXzhAq7LUl2yai5oXqpE8Wg">YouTube</a></p>
@@ -103,7 +101,7 @@
       </article> <!-- RFNY social media accounts list ends. -->
       
       <article class="footer-copyright">
-        <p>&copy Russia Forum New York. Project of the <a href="http://russiancenterny.org">Russian Center New York</a>.</p>
+        <p>&copy Russia Forum New York. </br>Project of the <a href="http://russiancenterny.org">Russian Center New York</a>.</p>
       </article>
 
       <article class="footer-dev">
