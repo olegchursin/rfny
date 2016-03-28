@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1200px) {
+
+  .speakers-list-img {
+    width: 35%;
+  }
+}
+
 @media only screen and (max-width: 870px) {
   #speaker-cards .col-3 {
     width: 48%;
@@ -14,6 +21,10 @@
   #sponsors-icons .line-wrap-first {
     margin-left: 0;
   }
+
+  .speakers-list-img {
+    width: 40%;
+  }
 }
 
 
@@ -24,6 +35,10 @@
 
   #home-program-icons .line-wrap-first {
     margin-left: 0;
+  }
+
+  .speakers-list-img {
+    width: 40%;
   }
 }
 
@@ -42,6 +57,10 @@
     margin: 5px auto;
     padding: 5px;
     line-height: 1.1;
+  }
+
+  .speakers-list-img {
+    width: 50%;
   }
 }
 
@@ -68,6 +87,10 @@
   .speaker-descr {
     margin-bottom: 20px;
   }
+
+  .speakers-list-img {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -85,5 +108,9 @@
 
   #home-program-icons {
   padding: 10px 0;
-}
+  }
+
+  .speakers-list-img {
+    width: 80%;
+  }
 }
