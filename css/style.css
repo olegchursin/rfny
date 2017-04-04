@@ -450,6 +450,12 @@ footer {
   display: block;
 }
 
+.single-sponsor {
+  margin: 20px auto 0;
+  width: 300px;
+  cursor: pointer;
+}
+
 
 /*********************************************
 *****             Contact Form           *****
